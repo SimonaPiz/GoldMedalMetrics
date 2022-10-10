@@ -2,11 +2,12 @@ var sqlite3 = require('sqlite3');
 var db = new sqlite3.Database('./gold_medals.sqlite');
 
 /*
-Returns a SQL query string that will create the Country table with four columns: name (required), code (required), gdp, and population.
+Returns a SQL query string that will create the Country table with 
+four columns: name (required), code (required), gdp, and population.
 */
 
 const createCountryTable = () => {
-  return;
+  return "CREATE TABLE Country (name TEXT NOT NULL, code TEXT NOT NULL, gdp INTEGER, population INTEGER);";
 };
 
 /*
