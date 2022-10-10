@@ -80,7 +80,7 @@ won the most medals, along with the number of medals aliased to 'count'.
 */
 
 const bestEvent = country => {
-  return;
+  return ("SELECT event, COUNT(*) AS count FROM GoldMedal WHERE country LIKE '" + country + "' GROUP BY 1 ORDER BY 2 DESC;");
 };
 
 /*
