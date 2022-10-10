@@ -21,11 +21,12 @@ const createGoldMedalTable = () => {
 };
 
 /*
-Returns a SQL query string that will find the number of gold medals for the given country.
+Returns a SQL query string that will find the number of gold medals 
+for the given country.
 */
 
 const goldMedalNumber = country => {
-    return;
+    return ("SELECT COUNT(*) AS count FROM GoldMedal WHERE country LIKE '" + country + "';");
 };
 
 /*
