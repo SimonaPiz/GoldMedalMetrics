@@ -62,7 +62,7 @@ won the most medals, along with the number of medals aliased to 'count'.
 */
 
 const bestDiscipline = country => {
-  return;
+  return ("SELECT discipline, COUNT(*) AS count FROM GoldMedal WHERE country LIKE '" + country + "' GROUP BY 1 ORDER BY 2 DESC;");
 };
 
 /*
