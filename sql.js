@@ -88,7 +88,7 @@ Returns a SQL query string that will find the number of male medalists.
 */
 
 const numberMenMedalists = country => {
-  return;
+  return ("SELECT COUNT(DISTINCT name) AS count FROM GoldMedal WHERE country LIKE '" + country + "' AND gender LIKE 'men';");
 };
 
 /*
