@@ -113,7 +113,18 @@ optionally ordered by the given field in the specified direction.
 */
 
 const orderedMedals = (country, field, sortAscending) => {
-  return;
+  const queryOrder = () => {
+    if (field) {
+      if (sortAscending) {
+        return "ORDER BY " + field + " ASC";
+      } else {
+        return "ORDER BY " + field + " DESC";
+      }
+    } else {
+      return '';
+    }
+  };
+  return ("SELECT * FROM GoldMedal WHERE country LIKE '" + country + "' " + queryOrder() + ";");
 };
 
 /*
