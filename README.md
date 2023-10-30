@@ -18,6 +18,8 @@
 
 In this project I wrote all the SQL statements for an Olympic metrics reporting web application called Gold Medal Metrics.
 
+You can view all of this functionality in action in the video below: [▶](https://content.codecademy.com/programs/build-apis/solution-videos/GoldMedalMetrics480.mov)
+
 ### Features
 
 Gold Medal Metrics allows users to:
